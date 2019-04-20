@@ -108,5 +108,46 @@ else
         echo "FALSE"
 fi
 
+while [ true ]; do
+	echo "HELLO WORLD"
+	break
+done
+
+for i in {0..10..1}; do
+	echo "Welcome $i times"
+done
 
 
+echo -n "Enter the name of a country: "
+read COUNTRY
+
+echo -n "The official language of $COUNTRY is "
+
+case $COUNTRY in
+
+  Lithuania)
+    echo -n "Lithuanian"
+    ;;
+
+  Romania | Moldova)
+    echo -n "Romanian"
+    ;;
+
+  Italy | "San Marino" | Switzerland | "Vatican City")
+    echo -n "Italian"
+    ;;
+
+  *)
+    echo -n "unknown"
+    ;;
+esac
+
+
+echo "ENTER YOUR NAME :: "
+read NAME
+case $NAME in 
+	sam)
+	echo "HI SANJAY!!!!";;
+	*)
+	echo "UNKNOWN NAME";;
+esac
